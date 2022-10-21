@@ -109,6 +109,9 @@ img{
         color: var(--accent-color)   
         
 }
+.footer-logo{
+    margin-bottom: 20px;
+}
 .part2-logo{
     color: var(--primary-color);
 }
@@ -329,12 +332,14 @@ margin-top: 27px;
 .team-item{
     background-color: var(--second-accent-color);
     border-radius: 4px;
-    padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-img{
-    padding-bottom: 30px;
     max-width: 260px;
+}
+.team-box{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .team-list{
 display: flex;
@@ -361,9 +366,7 @@ display: flex;
     gap: 10px;
     justify-content: center;
 }
-.icons-list:not(:last-child){
-    margin-right: 10px;
-}
+
 .social-list-icon{
     display: flex;
     justify-content: center;
@@ -430,6 +433,9 @@ display: flex;
 .footer-navigation{
     display: flex;
     align-items: baseline;
+}
+.footer-nav{
+    margin-right: 70px;
 }
 .footer-item{
     margin-bottom: 9px;
