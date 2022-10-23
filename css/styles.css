@@ -37,7 +37,7 @@ padding-left: 0;
 img{
     display: block;
 }
-.botton{
+.button{
     cursor: pointer;
 }
 
@@ -548,6 +548,7 @@ display: flex;
 }
 .cases-link{
     position: relative;
+    display: block;
      flex-basis: calc(( 100% - 60px) / 3 );
     transition-property: box-shadow;
         transition-duration: 250ms;
@@ -557,6 +558,9 @@ display: flex;
 .cases-link:hover,
 .cases-link:focus{
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cases-link:hover .cases-inf {
+    opacity: 1;
 }
 
 .cases-description{
@@ -577,9 +581,7 @@ display: flex;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
-        color: var(--secondary-color);
-        
-       
+        color: var(--secondary-color);    
 }
 .cases-inf{
     position: absolute;
@@ -591,13 +593,8 @@ display: flex;
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.cases-inf:hover,
-.cases-inf:focus{
-    opacity: 1;
-}
 .cases-inf-text{
     font-weight: 400;
         font-size: 18px;
@@ -608,4 +605,44 @@ display: flex;
         margin-right: 24px;   
         color:var(--second-accent-color);
 }
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 528px;
+    height: 300px;
+    background-color: var(--second-accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+}
 
+.modal-button{
+    position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1) ;
+        border-radius: 50%;
+        background-color: var(--second-accent-color);    
+}
+.modal-icon{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    fill: rgba(0, 0, 0, 1);
+}
