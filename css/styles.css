@@ -549,19 +549,21 @@ display: flex;
 .cases-link{
     position: relative;
     display: block;
-     flex-basis: calc(( 100% - 60px) / 3 );
-    transition-property: box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    flex-basis: calc(( 100% - 60px) / 3 );
+    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .cases-link:hover,
 .cases-link:focus{
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.cases-link:hover .cases-inf {
+.cases-link:hover .cases-inf
+ {
     opacity: 1;
+    transform: translateY(-100%);
 }
+
 
 .cases-description{
     border-left: 1px solid #EEEEEE;
@@ -587,13 +589,20 @@ display: flex;
     position: absolute;
     width: 100%;
     height: 294px;
-    top: 0%;
+    top: 294px;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
-    transition-property: opacity;
+
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+.cases-inf:hover,
+.cases-inf:focus{
+    transform: translateY(-100%);
+}
+
 
 .cases-inf-text{
     font-weight: 400;
