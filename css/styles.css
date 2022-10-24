@@ -70,7 +70,6 @@ img{
     bottom:-2%;
     background-color: var(--accent-color);
     border-radius: 2px;
-    
 }
 .section {
     padding-top: 94px;
@@ -89,9 +88,7 @@ img{
 
 .header-portfolio{
     margin-bottom: 94px;
-    border-bottom:1px solid #ECECEC
-    
-    
+    border-bottom:1px solid #ECECEC   
 }
 .menu{
     display: flex;
@@ -156,7 +153,6 @@ img{
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .icon-mail{
     margin-right: 10px;
@@ -167,8 +163,6 @@ img{
     margin-right: 10px;
     fill: currentColor;
 }
-
-
 .contact-phone:hover,
 .contact-phone:focus{
     color: var(--accent-color);
@@ -177,8 +171,6 @@ img{
 .cotnact-mail:focus{
 color: var(--accent-color);
 }
-
-
 /* ----------HERO------------ */
 
 .hero{
@@ -559,21 +551,17 @@ display: flex;
     opacity: 1;
     transform: translateY(-100%);
 }
-
-
 .cases-description{
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE ;
     border-bottom: 1px solid #EEEEEE;
-    padding: 20px 24px ; 
-        
+    padding: 20px 24px ;       
 }
 .portfolio-title{
     margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
-    
+    letter-spacing: 0.06em;  
     color: var(--primary-color);
 }
 .cases-text{
